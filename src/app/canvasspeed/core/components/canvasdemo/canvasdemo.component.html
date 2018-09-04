@@ -1,0 +1,27 @@
+<amexio-card [footer]="true" [header]="true" [show]="true" [header-align]="'left'" [footer-align]="'right'">
+    <amexio-header>
+        Card Header
+    </amexio-header>
+    <amexio-body>
+        <amexio-row>
+            <amexio-column size="6">
+                <amexio-text-input [field-label]="'Login Id'" [(ngModel)]="canvasdemo.loginid" name="canvasdemo.loginid" [allow-blank]="true" [min-length]="0" [max-length]="20" [font-size]="10" [has-label]="true">
+                </amexio-text-input>
+            </amexio-column>
+            <amexio-column size="6">
+                <amexio-password-input [field-label]="'Password'" [(ngModel)]="canvasdemo.password" name="canvasdemo.password" [allow-blank]="true" [min-length]="0" [max-length]="20" [font-size]="10" [has-label]="true">
+                </amexio-password-input>
+            </amexio-column>
+        </amexio-row>
+
+
+    </amexio-body>
+
+    <amexio-action>
+        <amexio-button [label]="'Login'" [icon]="'fa fa-key fa 2x'" [type]="'theme-color'" [tooltip]="'button'" [size]="'default'" [form-bind]="'save'">
+        </amexio-button>
+        <amexio-button [label]="'Cancel'" [icon]="'fa fa-close fa 2x'" [type]="'default'" [tooltip]="'button'" [size]="'default'" [form-bind]="'cancel'">
+        </amexio-button>
+
+    </amexio-action>
+</amexio-card>
